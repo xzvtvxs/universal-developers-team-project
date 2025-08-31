@@ -24,11 +24,19 @@ a {
 }
 
 button {
+  padding: 0;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input {
+  font-family: inherit;
+  outline: transparent;
 }
