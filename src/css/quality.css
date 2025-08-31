@@ -1,0 +1,32 @@
+.page-quality {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: #e0cbb4;
+}
+
+.quality {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0b0803;
+}
+.quality-heading {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #0b0803;
+}
+
+.quality-description {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0b0803;
+}
