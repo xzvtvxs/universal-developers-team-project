@@ -11,7 +11,10 @@
     line-height: 1.5;
     text-align: center;
     color: #0b0803;
+
+    margin-bottom: 16px;
 }
+
 .quality-heading {
     font-family: "Aboreto", sans-serif;
     font-weight: 400;
@@ -20,6 +23,8 @@
     letter-spacing: -0.01em;
     text-align: center;
     color: #0b0803;
+
+    margin-bottom: 24px;
 }
 
 .quality-description {
@@ -29,7 +34,56 @@
     line-height: 1.5;
     text-align: center;
     color: #0b0803;
+
+    margin-bottom: 32px;
 }
+
 .card-set-quality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+    gap: 24px;
 }
+
+.picture-quality {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+.card-quality {
+    border-radius: 32px;
+}
+.text-container-quality {
+    margin-top: 32px;
+}
+
+.strengths-quality {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0b0803;
+
+    margin-bottom: 8px;
+
+}
+
+.strengths-description {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0b0803;
+}
+
+ @media screen and (min-width: 768px) {
+   .card-set-quality {
+    
+   }
+}
+ 
