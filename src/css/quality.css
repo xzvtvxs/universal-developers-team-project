@@ -50,6 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
+    
 
 }
 
@@ -83,7 +84,20 @@
 
  @media screen and (min-width: 768px) {
    .card-set-quality {
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+   }
+   .picture-quality {
+    width: 340px;
+   }
+   .card-quality {
+    width: 100%;
+    height: auto;
+    display: block;
    }
 }
  
+    
+    
+    
