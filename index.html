@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-wp9GsmaF.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-Dqphcqig.css">
   </head>
   <body>
     <header>
@@ -105,11 +105,68 @@
         
     </div>
 </section>
-      <section class="section">
-    <div class="container">
-        
+      <section class="section section-subscribe">
+  <div class="container subscribe-container">
+    <div class="subscribe-content">
+      <h2 class="subscr-title">Join Our Coffee Community</h2>
+      <p class="subscr-text">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
+
+      <div class="subscr-email-box">
+        <form class="subscr-field">
+          <label class="subscr-label" for="input-email-subscr">
+            <input
+              class="input-field"
+              name="input-email-subscr"
+              id="input-email-subscr"
+              placeholder="Your Email Here"
+              type="email"
+              required
+            />
+          </label>
+          <button class="subscr-btn" type="submit">
+            Subscribe
+            <svg class="subscr-btn-icon" width="24" height="24">
+              <use href="../img/sprite.svg#chevrons-right"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <p class="subscr-bottom-text">
+        By clicking Get Started, you agree to our Terms and Conditions.
+      </p>
     </div>
+
+    <div class="subscr-img-box">
+      <picture class="subscr-img">
+        <source
+          media="(min-width: 1440px)"
+          srcset="../img/desktop/subscribe-desktop/Subscribe-desktop-min.png 1x, ../img/desktop/subscribe-desktop/Subscribe-desktop@2x-min.png 2x"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="../img/tablet/subscribe-tablet/Subscribe-tablet-min.png 1x, ../img/tablet/subscribe-tablet/Subscribe-tablet@2x-min.png 2x"
+        />
+
+        <source
+          media="(min-width: 320px)"
+          srcset="../img/phone/subscribe/Subscribe-min.png 1x, ../img/phone/subscribe/Subscribe@2x-min.png 2x"
+        />
+
+        <img
+          src="../img/phone/subscribe/Subscribe-min.png"
+          alt="Subscribe illustration"
+          class="subscr-img-fallback"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
+
       <section class="section">
     <div class="container">
         
