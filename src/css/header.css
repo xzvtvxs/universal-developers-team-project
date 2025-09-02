@@ -133,17 +133,3 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
 }
-
-@media screen and (min-width: 1158px) {
-  .header-logo {
-    margin-right: 772px;
-  }
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    background: #e0cbb4;
-  }
-}
