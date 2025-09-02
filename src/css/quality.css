@@ -83,7 +83,12 @@
 }
 
  @media screen and (min-width: 768px) {
-   .card-set-quality {
+    .quality-heading {
+    
+    max-width: 452px;
+    margin: 0 auto;
+    }
+    .card-set-quality {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px 24px;
@@ -101,6 +106,16 @@
    }
 }
 @media screen and (min-width: 1440px) {
+    .quality-heading {
+        font-size: 48px;
+        max-width: 768px;
+    }
+    .quality-description {
+        margin: 0 auto;
+        max-width: 768px;
+        margin-bottom: 32px;
+
+    }
     .picture-quality {
     width: 421px;
    }
