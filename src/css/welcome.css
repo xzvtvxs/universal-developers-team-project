@@ -65,14 +65,12 @@
 }
 
 .content-welcome-link:hover {
-    color: #EADFD6;
-    background-color: #C29D84;
+    opacity: 0.5;
 
 }
 
 .content-welcome-link:focus {
-    color: white;
-    background-color: #6f4e37;
+    opacity: 0.5;
 }
 
 .welcome-map-pin {
