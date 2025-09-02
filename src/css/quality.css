@@ -96,8 +96,20 @@
     height: auto;
     display: block;
    }
+   .picture-quality.broad {
+    width: 705px;
+   }
 }
- 
-    
-    
-    
+@media screen and (min-width: 1440px) {
+    .picture-quality {
+    width: 421px;
+   }
+   .card-set-quality {
+    align-items: unset;
+   }
+   .picture-quality.broad {
+    width: 421px;
+   }
+}
+
+
