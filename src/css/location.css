@@ -120,7 +120,7 @@ a {
     flex-direction: column;
   }
 
-  .loc-item .loc-data-direct {
+  .loc-item .loc-link-direct {
     margin: 0;
   }
 
