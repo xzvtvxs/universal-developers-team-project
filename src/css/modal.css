@@ -1,0 +1,147 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    transition: opacity 250 cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250 cubic-bezier(0.4, 0, 0.2, 1);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 288px;
+    transform: translate(-50%, -50%);
+    padding: 64px 16px 64px 16px;
+    border-radius: 40px;
+    background: #E0CBB4;
+    transition: transform 250 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop:not(.is-open) .modal {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.modal-close-btn {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 24px;
+    right: 24px;
+    margin-left: 232px;
+    margin-bottom: 8px;
+}
+
+.modal-title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.modal-text {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.modal-secondary-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 256px;
+    height: 44px;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background-color: #6F4E37;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.modal-secondary-close-btn:hover,
+.modal-secondary-close-btn:focus {
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background: #6F4E37;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 704px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .modal-title {
+        margin-left: auto;
+        margin-right: auto;
+        width: 502px;
+        font-size: 36px;
+    }
+
+    .modal-text {
+        margin-bottom: 48px;
+    }
+
+    .modal-image {
+        width: 644px;
+        height: 374px;
+    }
+
+    .modal-secondary-close-btn {
+        width: 340px;
+        margin-top: 48px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .modal {
+        width: 866px;
+        padding: 64px;
+    }
+
+    .modal-title {
+        font-size: 48px;
+        width: 738px;
+    }
+
+    .modal-image {
+        margin: 0 auto;
+    }
+
+    .modal-secondary-close-btn {
+        width: 274px;
+    }
+}
