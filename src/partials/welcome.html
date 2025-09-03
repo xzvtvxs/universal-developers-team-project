@@ -1,5 +1,39 @@
 <section class="section">
-    <div class="container">
-
+    <div class="container section-welcome">
+        <div class="content-welcome">
+            <div class="content-welcome-title">
+                <p class="tagline-welcome">Welcome</p>
+                <h2 class="tagline-welcome-heading">Our Journey: Passion for Quality Coffee</h2>
+            </div>
+            <div class="welcome-text-link">
+                <p class="content-welcome-text">At CoffeeJoy, we believe that every cup tells a story. Our mission is to
+                    bring you the finest coffee
+                    experiences,
+                    crafted with care and dedication. We are committed to sourcing high-quality beans and roasting them
+                    to perfection,
+                    ensuring each sip is a delight.
+                </p>
+                <a href="./location" class="content-welcome-link">Find location
+                    <svg class="welcome-map-pin" width="20" height="20">
+                        <use href="../img/sprite.svg#map-pin"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="welcome-container-image">
+            <picture>
+                <source
+                    srcset="../img/desktop/welcome-desktop/Welcome-desktop-min.jpg 1x, ../img/desktop/welcome-desktop/Welcome-desktop@2x-min.jpg 2x"
+                    media="(min-width: 1440px )" />
+                <source
+                    srcset="../img/tablet/welcome-tablet/Welcome-tablet-min.jpg 1x, ../img/tablet/welcome-tablet/Welcome-tablet@2x-min.jpg 2x"
+                    media="(min-width: 768px)" />
+                <source
+                    srcset="../img/phone/welcome/Welcome.jpg-min.jpg 1x, ../img/phone/welcome/Welcome.jpg@2x-min.jpg 2x"
+                    media="(min-width: 375px)" />
+                <img class="welcome-image" src="../img/phone/welcome/Welcome.jpg-min.jpg" alt="" width="1312"
+                    height="738" />
+            </picture>
+        </div>
     </div>
 </section>

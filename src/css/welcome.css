@@ -1,0 +1,113 @@
+.section {
+    background-color: #E0CBB4;
+}
+
+.container.section-welcome {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content-welcome {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content-welcome-title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tagline-welcome {
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.tagline-welcome-heading {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.welcome-text-link {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content-welcome-text {
+    font-size: 18px;
+    line-height: 1.5;
+
+}
+
+.content-welcome-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 288px;
+    height: 44px;
+    color: white;
+    background-color: #6f4e37;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+}
+
+.content-welcome-link:hover,
+.content-welcome-link:focus {
+    opacity: 0.5;
+    background: #6F4E37;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+}
+
+.welcome-map-pin {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.welcome-image {
+    border-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .content-welcome {
+        flex-direction: row;
+    }
+
+    .tagline-welcome-heading {
+        width: 336px;
+    }
+
+    .content-welcome-link {
+        width: 181px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .tagline-welcome-heading {
+        width: 640px;
+        font-size: 48px;
+    }
+
+    .content-welcome-text {
+        width: 640px;
+    }
+}
