@@ -1,0 +1,116 @@
+.quality {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.quality-heading {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.quality-description {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.card-set-quality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.picture-quality {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.card-quality {
+    border-radius: 32px;
+}
+.text-container-quality {
+    margin-top: 32px;
+}
+.strengths-quality {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.strengths-description {
+    line-height: 1.5;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .quality-heading {
+        max-width: 452px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .card-set-quality {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px 24px;
+    }
+    .picture-quality {
+        width: 340px;
+    }
+    .card-quality {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .picture-quality.broad {
+        width: 705px;
+    }
+    .strengths-quality.tuning {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .strengths-description.adjustment {
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+    .strengths-description.box {
+        max-width: 440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .quality-heading {
+        font-size: 48px;
+        max-width: 768px;
+    }
+    .quality-description {
+        margin: 0 auto;
+        max-width: 768px;
+        margin-bottom: 32px;
+    }
+    .picture-quality {
+        width: 421px;
+    }
+    .card-set-quality {
+        align-items: unset;
+    }
+    .picture-quality.broad {
+        width: 421px;
+    }
+    .strengths-quality.tuning {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .strengths-description.adjustment {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
