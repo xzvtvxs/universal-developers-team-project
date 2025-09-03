@@ -2,8 +2,7 @@
     background-color: #E0CBB4;
 }
 
-.container,
-.section-welcome {
+.container.section-welcome {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -62,15 +61,20 @@
     height: 44px;
     color: white;
     background-color: #6f4e37;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
 }
 
-.content-welcome-link:hover {
-    opacity: 0.5;
-
-}
-
+.content-welcome-link:hover,
 .content-welcome-link:focus {
     opacity: 0.5;
+    background: #6F4E37;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
 }
 
 .welcome-map-pin {
@@ -79,10 +83,9 @@
     fill: white;
 }
 
-img {
+.welcome-image {
     border-radius: 40px;
 }
-
 
 @media screen and (min-width: 768px) {
     .content-welcome {
