@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/universal-developers-team-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/universal-developers-team-project/assets/index-C3a7wgFb.css">
+    <link rel="stylesheet" crossorigin href="/universal-developers-team-project/assets/index-DDG1OdFn.css">
   </head>
   <body>
     <header class="header-section">
@@ -40,7 +40,7 @@
         <li class="nav-item"><a class="nav-link" href="#testimonials" title="Testimonial">Testimonial</a></li>
         <li class="nav-item"><a class="nav-link" href="#location" title="Location">Location</a></li>
       </ul>
-      <button class="burger-btn" type="button" role="button" data-menu-open>
+      <button class="burger-btn" type="button" role="button" id="data-burger-open" data-menu-open>
         <svg class="burger-icon" width="24" height="24">
           <use href="/universal-developers-team-project/assets/sprite-BEl393VG.svg#menu"></use>
         </svg>
@@ -110,7 +110,7 @@
                 <picture>
                     <source media="(min-width: 1440px)" srcset="/universal-developers-team-project/assets/Quality-desktop-1-min-Cu0LG2nb.png 1x, /universal-developers-team-project/assets/Quality-desktop-1@2x-min-Bbu_HtpO.png 2x" />
                     <source media="(min-width: 768px)" srcset="/universal-developers-team-project/assets/Quality-tablet-1-min-DsJjRq2M.png 1x, /universal-developers-team-project/assets/Quality-tablet-1@2x-min-4P9aXZ-_.png 2x" />
-                    <source media="(max-width: 767px)" srcset="./img/phone/qality/Quality-1-min.png 1x, ./img/phone/quality/Qality-1@2x-min.png 2x" />
+                    <source media="(max-width: 767px)" srcset="/universal-developers-team-project/assets/Quality-1-min-CpRW4oQ_.png 1x, ./img/phone/quality/Quality-1@2x-min.png 2x" />
                     <img class="card-quality" src="/universal-developers-team-project/assets/Quality-1-min-CpRW4oQ_.png"
                         alt="Coffee is being poured into the grinder" width="375" height="164" />
                 </picture>
@@ -262,8 +262,8 @@
               type="email"
               required
             />
-            <p class="text-invalid">Error Text</p>
-          </label>
+            <p class="text-invalid">Incorrect email input</p>
+            </label>
           <button class="subscr-btn" type="button" data-modal-open>
             Subscribe
             <svg class="subscr-btn-icon" width="24" height="24">
@@ -699,11 +699,12 @@
   </div>
 </footer>
 
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu" id="mobile-menu" data-menu>
     <div class="container mobile-menu-container">
         <div class="mobile-menu-top">
             <img class="mobile-menu-header-logo" src="/universal-developers-team-project/assets/logo-CSDcMvMm.svg" width="64" height="36" alt="logo coffe joy" />
-            <button class="mobile-menu-close" data-menu-close>
+            <button class="mobile-menu-close" id="data-burger-close"
+             data-menu-close>
                 <svg class="svg-icon-close" width="24" height="24">
                     <use href="/universal-developers-team-project/assets/sprite-BEl393VG.svg#x"></use>
                 </svg>
