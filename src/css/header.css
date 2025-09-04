@@ -1,3 +1,8 @@
+.header-section {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 .nav-list {
   display: none;
 }
@@ -9,11 +14,8 @@
 }
 .header-logo {
   display: block;
-  padding: 18px 10.5px 18px 11px;
-  width: 84px;
 }
 .burger-btn {
-  padding: 24px 12px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -33,6 +35,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .header-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    }
   
   .nav-list {
     display: flex;

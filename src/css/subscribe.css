@@ -1,3 +1,7 @@
+.subscribe-content{
+margin-bottom: 32px;
+}
+
 .subscr-title {
   font-family: 'Aboreto', sans-serif;
   font-weight: 400;
@@ -26,7 +30,7 @@
   width: 100%;
   height: 40px;
   padding-left: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 32px;
 }
 
 .input-field::placeholder {
@@ -114,6 +118,7 @@
 
 @media screen and (min-width: 767px) {
   .subscr-field {
+    flex-wrap: wrap;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -129,7 +134,7 @@
     width: 340px;
     height: 44px;
     margin-right: 24px;
-    margin-bottom: 0;
+    margin-bottom: 16px;
   }
 
   .subscr-btn {
