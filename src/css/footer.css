@@ -55,13 +55,6 @@ footer {
   margin-top: 32px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .footer-box {
-    width: 288px;
-    height: 500px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer-box {
     width: 704px;
